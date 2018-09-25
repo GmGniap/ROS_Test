@@ -1,0 +1,361 @@
+<robot
+  name="walker">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0493651591543752 0.608500074024073 0.487914726043467"
+        rpy="0 0 0" />
+      <mass
+        value="0.737133234483516" />
+      <inertia
+        ixx="0.0203164743598328"
+        ixy="-0.00320087679768777"
+        ixz="-5.15643442755873E-06"
+        iyy="0.0175417975416245"
+        iyz="-2.43284445486126E-05"
+        izz="0.00761195051607928" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.643137254901961 0.615686274509804 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="side1">
+    <inertial>
+      <origin
+        xyz="-0.000302109073418266 0.0350794866250518 -6.18465189672346E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.25320173083073" />
+      <inertia
+        ixx="0.0726021859080119"
+        ixy="0.000112340528461026"
+        ixz="-8.62416304597843E-08"
+        iyy="0.052324927087735"
+        iyz="-1.18870695965004E-07"
+        izz="0.124786157673895" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/side1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/side1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="side1_frame"
+    type="fixed">
+    <origin
+      xyz="0.132694854546502 -0.287220458811985 0.384744920401555"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="side1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="stand1">
+    <inertial>
+      <origin
+        xyz="-0.0411059934712464 0.00606177996094787 -0.20040708718715"
+        rpy="0 0 0" />
+      <mass
+        value="0.248882707927513" />
+      <inertia
+        ixx="0.0182255893585729"
+        ixy="8.52841209235053E-06"
+        ixz="-0.000260729804600482"
+        iyy="0.0182585045262154"
+        iyz="0.000128904167511977"
+        izz="0.000164978494307141" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/stand1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/stand1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="stand1_wheel"
+    type="fixed">
+    <origin
+      xyz="-0.283191212677328 -0.4475 0.0399888125259962"
+      rpy="3.14159265358979 -1.54714469308726 3.14159265358979" />
+    <parent
+      link="side1" />
+    <child
+      link="stand1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="0.00733957522717466 3.80762109032651E-06 -0.281375365689952"
+        rpy="0 0 0" />
+      <mass
+        value="0.30691537590687" />
+      <inertia
+        ixx="0.024969091512902"
+        ixy="7.71783919381543E-10"
+        ixz="-6.0916307713361E-05"
+        iyy="0.0246408399422944"
+        iyz="3.28820164669294E-07"
+        izz="0.000341798071468766" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="two_wheel1"
+    type="fixed">
+    <origin
+      xyz="-0.0899999999999999 0 0"
+      rpy="0 -6.24500451351651E-17 0" />
+    <parent
+      link="stand1" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="side2">
+    <inertial>
+      <origin
+        xyz="-0.000302109073421042 0.0350794866250502 -6.18465189838879E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.25320173083073" />
+      <inertia
+        ixx="0.0726021859080116"
+        ixy="0.000112340528460586"
+        ixz="-8.62416304655625E-08"
+        iyy="0.0523249270877351"
+        iyz="-1.18870695980576E-07"
+        izz="0.124786157673894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/side2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/side2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="side2_frame"
+    type="fixed">
+    <origin
+      xyz="0.132694854546502 -0.68945309872627 0.384744920401555"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="side2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="stand2">
+    <inertial>
+      <origin
+        xyz="-0.00110599434639125 -0.0439382196623821 0.200407097748839"
+        rpy="0 0 0" />
+      <mass
+        value="0.248882712378205" />
+      <inertia
+        ixx="0.0182255906789842"
+        ixy="8.5284177303851E-06"
+        ixz="0.000260729972070186"
+        iyy="0.0182585058550433"
+        iyz="-0.000128904261882963"
+        izz="0.00016497850331528" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/stand2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/stand2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="stand2_wheel"
+    type="continuous">
+    <origin
+      xyz="-0.282245235531346 -0.3975 0"
+      rpy="3.14159265358979 1.54714469308726 3.14159265358979" />
+    <parent
+      link="side2" />
+    <child
+      link="stand2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="-0.0423056833430825 -0.0499961923789098 0.266379560992705"
+        rpy="0 0 0" />
+      <mass
+        value="0.306915375906869" />
+      <inertia
+        ixx="0.0249690915129019"
+        ixy="7.71783919373383E-10"
+        ixz="6.09163077133593E-05"
+        iyy="0.0246408399422943"
+        iyz="-3.28820164668724E-07"
+        izz="0.000341798071468765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://walker/meshes/wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="two_wheel2"
+    type="continuous">
+    <origin
+      xyz="-0.000354741429743233 0 0.0149958046972486"
+      rpy="0 -3.46944695195361E-18 0" />
+    <parent
+      link="stand2" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>
