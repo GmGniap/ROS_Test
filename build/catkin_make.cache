@@ -1,0 +1,2 @@
+motor_driver:ros_arduino_bridge/ros_arduino_bridge:ros_arduino_bridge/ros_arduino_firmware:ros_arduino_bridge/ros_arduino_msgs:ros_arduino_bridge/ros_arduino_python
+-DCATKIN_DEVEL_PREFIX=/home/gmgniap/test_robot/devel -DCMAKE_INSTALL_PREFIX=/home/gmgniap/test_robot/install -G Unix Makefiles

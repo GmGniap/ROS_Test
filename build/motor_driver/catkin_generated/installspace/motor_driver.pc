@@ -1,0 +1,8 @@
+prefix=/home/gmgniap/test_robot/install
+
+Name: motor_driver
+Description: Description of motor_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gmgniap/test_robot/install/lib 
+Requires: 
