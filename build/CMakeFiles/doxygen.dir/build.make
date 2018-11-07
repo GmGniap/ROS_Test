@@ -35,10 +35,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gmgniap/test_robot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gmgniap/test_robot/build
+=======
+CMAKE_SOURCE_DIR = /home/gmgniap/robot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gmgniap/robot/build
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 
 # Utility rule file for doxygen.
 
@@ -60,6 +67,10 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
+<<<<<<< HEAD
 	cd /home/gmgniap/test_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gmgniap/test_robot/src /home/gmgniap/test_robot/src /home/gmgniap/test_robot/build /home/gmgniap/test_robot/build /home/gmgniap/test_robot/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gmgniap/robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gmgniap/robot/src /home/gmgniap/robot/src /home/gmgniap/robot/build /home/gmgniap/robot/build /home/gmgniap/robot/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : CMakeFiles/doxygen.dir/depend
 

@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 motor_driver:ros_arduino_bridge/ros_arduino_bridge:ros_arduino_bridge/ros_arduino_firmware:ros_arduino_bridge/ros_arduino_msgs:ros_arduino_bridge/ros_arduino_python
 -DCATKIN_DEVEL_PREFIX=/home/gmgniap/test_robot/devel -DCMAKE_INSTALL_PREFIX=/home/gmgniap/test_robot/install -G Unix Makefiles
+=======
+walker
+-DCATKIN_DEVEL_PREFIX=/home/gmgniap/robot/devel -DCMAKE_INSTALL_PREFIX=/home/gmgniap/robot/install -G Unix Makefiles
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026

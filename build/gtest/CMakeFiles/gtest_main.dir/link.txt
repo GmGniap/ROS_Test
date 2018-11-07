@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /usr/bin/c++  -fPIC    -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/gmgniap/test_robot/build/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/gmgniap/test_robot/build/gtest/src:/home/gmgniap/test_robot/build/gtest 
+=======
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/gmgniap/robot/build/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/gmgniap/robot/build/gtest/src:/home/gmgniap/robot/build/gtest 
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026

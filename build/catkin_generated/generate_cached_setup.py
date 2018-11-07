@@ -19,9 +19,15 @@ except ImportError:
             break
     from catkin.environment_cache import generate_environment_script
 
+<<<<<<< HEAD
 code = generate_environment_script('/home/gmgniap/test_robot/devel/env.sh')
 
 output_filename = '/home/gmgniap/test_robot/build/catkin_generated/setup_cached.sh'
+=======
+code = generate_environment_script('/home/gmgniap/robot/devel/env.sh')
+
+output_filename = '/home/gmgniap/robot/build/catkin_generated/setup_cached.sh'
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 with open(output_filename, 'w') as f:
     #print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

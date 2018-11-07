@@ -1,2 +1,6 @@
 - setup-file:
+<<<<<<< HEAD
     local-name: /home/gmgniap/test_robot/install/setup.sh
+=======
+    local-name: /home/gmgniap/robot/install/setup.sh
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026

@@ -35,10 +35,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/gmgniap/test_robot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gmgniap/test_robot/build
+=======
+CMAKE_SOURCE_DIR = /home/gmgniap/robot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gmgniap/robot/build
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 
 # Utility rule file for clean_test_results.
 
@@ -46,7 +53,11 @@ CMAKE_BINARY_DIR = /home/gmgniap/test_robot/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
+<<<<<<< HEAD
 	/usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/remove_test_results.py /home/gmgniap/test_robot/build/test_results
+=======
+	/usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/remove_test_results.py /home/gmgniap/robot/build/test_results
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -61,6 +72,10 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
+<<<<<<< HEAD
 	cd /home/gmgniap/test_robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gmgniap/test_robot/src /home/gmgniap/test_robot/src /home/gmgniap/test_robot/build /home/gmgniap/test_robot/build /home/gmgniap/test_robot/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/gmgniap/robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gmgniap/robot/src /home/gmgniap/robot/src /home/gmgniap/robot/build /home/gmgniap/robot/build /home/gmgniap/robot/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 
