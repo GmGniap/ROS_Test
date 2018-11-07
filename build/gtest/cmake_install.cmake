@@ -2,7 +2,11 @@
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+<<<<<<< HEAD
+  SET(CMAKE_INSTALL_PREFIX "/home/gmgniap/test_robot/install")
+=======
   SET(CMAKE_INSTALL_PREFIX "/home/gmgniap/robot/install")
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

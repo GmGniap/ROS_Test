@@ -39,10 +39,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
+CMAKE_SOURCE_DIR = /home/gmgniap/test_robot/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/gmgniap/test_robot/build
+=======
 CMAKE_SOURCE_DIR = /home/gmgniap/robot/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/gmgniap/robot/build
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +127,24 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gmgniap/test_robot/build/CMakeFiles /home/gmgniap/test_robot/build/gtest/CMakeFiles/progress.marks
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gmgniap/test_robot/build/CMakeFiles 0
+=======
 	cd /home/gmgniap/robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/gmgniap/robot/build/CMakeFiles /home/gmgniap/robot/build/gtest/CMakeFiles/progress.marks
 	cd /home/gmgniap/robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gmgniap/robot/build/CMakeFiles 0
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +153,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
 	cd /home/gmgniap/robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : depend
 
 # Convenience name for target.
 gtest/CMakeFiles/gtest.dir/rule:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/rule
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/rule
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -160,12 +193,20 @@ gtest: gtest/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : gtest/fast
 
 # Convenience name for target.
 gtest/CMakeFiles/gtest_main.dir/rule:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/rule
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/rule
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -174,7 +215,11 @@ gtest_main: gtest/CMakeFiles/gtest_main.dir/rule
 
 # fast build rule for target.
 gtest_main/fast:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : gtest_main/fast
 
 src/gtest-all.o: src/gtest-all.cc.o
@@ -182,7 +227,11 @@ src/gtest-all.o: src/gtest-all.cc.o
 
 # target to build an object file
 src/gtest-all.cc.o:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : src/gtest-all.cc.o
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -190,7 +239,11 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -198,7 +251,11 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.o: src/gtest_main.cc.o
@@ -206,7 +263,11 @@ src/gtest_main.o: src/gtest_main.cc.o
 
 # target to build an object file
 src/gtest_main.cc.o:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : src/gtest_main.cc.o
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -214,7 +275,11 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -222,7 +287,11 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+=======
 	cd /home/gmgniap/robot/build && $(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -257,6 +326,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
+	cd /home/gmgniap/test_robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
 	cd /home/gmgniap/robot/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 .PHONY : cmake_check_build_system
 

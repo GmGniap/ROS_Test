@@ -4,7 +4,11 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< HEAD
+  "/usr/src/gtest/src/gtest_main.cc" "/home/gmgniap/test_robot/build/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+=======
   "/usr/src/gtest/src/gtest_main.cc" "/home/gmgniap/robot/build/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +19,11 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+<<<<<<< HEAD
+  "/home/gmgniap/test_robot/build/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+=======
   "/home/gmgniap/robot/build/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
   )
 
 # The include file search paths:

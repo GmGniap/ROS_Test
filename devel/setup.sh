@@ -8,7 +8,11 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
+<<<<<<< HEAD
+: ${_CATKIN_SETUP_DIR:=/home/gmgniap/test_robot/devel}
+=======
 : ${_CATKIN_SETUP_DIR:=/home/gmgniap/robot/devel}
+>>>>>>> 16f8ab4049087f7854a979fee4d571275ba88026
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 
