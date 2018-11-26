@@ -14,4 +14,4 @@ And another nominated person is my supervisor Dr.Aung Ko,head of Precision Depar
 Any suggestions or points of errors for this package , feel free to contact me or my email thetpaimyo103@gmail.com. 
 Thanks for reading. 
 
-Error Note - https://docs.google.com/document/d/1FVon6u5c9o1wGa1OQaQWWItVg9P4lUE-3Y5qWv4NsD0/edit?usp=sharing
+Error Note -Google Doc- https://goo.gl/aRAsDb 
