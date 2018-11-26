@@ -17,7 +17,7 @@ class Arduino(object):
 		rospy.logdebug(line)
 		self._Publisher.publish(String(line))
 	
-	def __init__(self, port="/dev/ttyACM1", baudrate=115200):
+	def __init__(self, port="/dev/ttyACM0", baudrate=115200):
 		self._Publisher = rospy.Publisher('serial', String, queue_size=10)
  		rospy.init_node('arduino')
 		self._SerialDataGateway = SerialDataGateway(port, baudrate,  self._HandleReceivedLine)
@@ -31,7 +31,7 @@ class Arduino(object):
 		 self._SerialDataGateway.Stop()
  
 if __name__ == '__main__':
-	arduino = Arduino("/dev/ttyACM1", 115200)
+	arduino = Arduino("/dev/ttyACM0", 115200)
 	try:
 		arduino.Start()
 		rospy.spin()

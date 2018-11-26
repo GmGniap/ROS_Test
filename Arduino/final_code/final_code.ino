@@ -105,11 +105,11 @@ volatile bool RightEncoderBSet;
 //Motor Pin definition
 //Left Motor pins
 
-#define A_1 8
-#define B_1 9
+#define A_1 9
+#define B_1 10
 
 //PWM 1 pin number
-#define PWM_1 10
+#define PWM_1 11
 
 
 //Right Motor
@@ -308,7 +308,7 @@ void loop()
     //Serial.println("Read from Serial");
     
     //Send time information through serial port
-    //Update_Time();
+    Update_Time();
     //Serial.println("Update Time");
     
     //Send encoders values through serial port
@@ -316,15 +316,15 @@ void loop()
     //Serial.println("Update Encoders");
     
     //Send ultrasonic values through serial port
-    //Update_Ultra_Sonic();
+    Update_Ultra_Sonic();
     //Serial.println("Update Ultra");
 
     //Update motor values with corresponding speed and send speed values through serial port
-    //Update_Motors();
+    Update_Motors();
     //Serial.println("Update Motor");
 
     //Send MPU 6050 values through serial port
-    //Update_MPU6050();
+    Update_MPU6050();
     //Serial.println("Update MPU");
     
     //Send battery values through serial port
@@ -376,7 +376,7 @@ void do_Left_Encoder()
 {
    // Test transition; since the interrupt will only fire on 'rising' we don't need to read pin A
   LeftEncoderBSet = digitalRead(Left_Encoder_PinB);   // read the input pin
-  Left_Encoder_Ticks += LeftEncoderBSet ? -1 : +1;  // change '-=' to '+=' to get correct encoder counts in serial
+  Left_Encoder_Ticks -= LeftEncoderBSet ? -1 : +1;  
    
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -405,8 +405,6 @@ void Reset()
   delay(1000);
   digitalWrite(RESET_PIN,LOW);
   digitalWrite(GREEN_LED,LOW); 
- 
-  
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -54,7 +54,7 @@ class Arduino_Class(object):
 		self.robot_heading = 0
 #######################################################################################################################
 		#Get serial port and baud rate of Tiva C Launchpad
-		port = rospy.get_param("~port", "/dev/ttyACM0")
+		port = rospy.get_param("~port", "/dev/ttyACM1")
 		baudRate = int(rospy.get_param("~baudRate", 115200))
 
 #######################################################################################################################
